@@ -1,0 +1,7 @@
+stages:
+  - setup
+
+setup-k3d-cluster:
+  stage: setup
+  script:
+    - k3d cluster create --config k3d_cluster_config.yaml
